@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI
+	xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Farai un vers de dreit nien</title>
+				<author>Guglielmo IX</author>
+				<respStmt>
+					<resp>Edizione digitale di </resp>
+					<name>Lorenzo Fabiani</name>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Edizioni La Tana della Volpe</publisher>
+				<availability>
+					<p>This document is being made available for demonstration and testing purposes
+						only.</p>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<listWit>
+					<witness xml:id="C"> Paris, BnF, fr. 856</witness>
+					<witness xml:id= "E"> Paris, BnF, fr. 1749 </witness>
+				</listWit>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<editorialDecl>
+				<p>Quello che segue è un esempio di lavoro.</p>
+			</editorialDecl>
+			<variantEncoding method="parallel-segmentation" location="internal"/>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<front xml:id="front">
+			<div type="section" xml:id="preface">
+				<head>Prefazione</head>
+				<p>Questa edizione digitale si fonda su quella a cura di Mario Eusebi.</p>
+			</div>
+			<div type="section" xml:id="preface-section-1">
+				<head>Osservazioni sulla tradizione manoscritta</head>
+				<p>Uno dei due manoscritti, E, pone tra la sesta strofe e la tornada una strofe che Eusebi considera un allotropo della sesta, perché contiene un verso,«non aus dire lo tort que m'a», che contraddice il v. 32, verso che riprende corentemenete il v. 27 </p>
+			</div>
+		</front>
+		<body>
+			<pb n="C, f. 230v" facs= "https://gallica.bnf.fr/ark:/12148/btv1b8419246t/f528.highres"/>
+			<pb	n="E, f. 114" facs= "https://gallica.bnf.fr/ark:/12148/btv1b6000801v/f118.highres"/>
+			<pb n="C, f. 231r" facs= "https://gallica.bnf.fr/ark:/12148/btv1b8419246t/f529.highres"/>
+			<pb	n="E, f. 115" facs= "https://gallica.bnf.fr/ark:/12148/btv1b6000801v/f119.highres"/>
+			
+			<div type="stanza" n="1">
+				<head>Farai un vers de dreit nien</head>
+				<lg>
+					<l>Farai un vers de 
+			
+						<app>
+							<lem wit="#E">dreit</lem>
+							<rdg wit="#C" type="orthographic">dreyt</rdg>
+						</app>
+												nien
+					</l>
+					<l>non er de mi ni d'autra gen,</l>
+					<l>non er d'amor ni de joven</l>
+					<l>ni de ren au,</l>
+					<l>qu'enans 
+						<app>
+							<lem wit="#E">fo</lem>
+							<rdg wit="#C" type="substantive">fuy</rdg>
+						</app> trobatz en durmen
+					</l>
+					<l>
+						<app>
+							<lem wit="#E">sus un</lem>
+							<rdg wit="#C" type="substantive">sobre</rdg>
+						</app>
+						<app>
+							<lem wit="#E">chivau</lem>
+							<rdg wit="#C" type="orthographic">chevau</rdg>
+						</app>.
+					</l>
+				</lg>
+			</div>
+		</body>
+	</text>
+</TEI>
